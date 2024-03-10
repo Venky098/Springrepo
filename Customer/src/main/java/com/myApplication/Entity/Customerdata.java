@@ -3,9 +3,21 @@ package com.myApplication.Entity;
 public class Customerdata {
 	
 	private int customer_id;
-	
 	private String customer_name;
 	private String customer_region;
+	
+	public Customerdata() {
+		customer_id =1;
+		customer_name="Dummy";
+		customer_region ="APAC";
+	}
+	
+	public Customerdata(int customer_id, String customer_name, String customer_region) {
+		this.customer_id =customer_id;
+		this.customer_name=customer_name;
+		this.customer_region =customer_region;
+	}
+	
 	public int getCustomer_id() {
 		return customer_id;
 	}
