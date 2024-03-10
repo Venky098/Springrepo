@@ -13,7 +13,8 @@ public class MyApplication {
 		//
 		System.out.println("Hi This is Spring Application");
 		
-	
+		CustomerServiceImpl csi = new CustomerServiceImpl();
+		csi.createCustomer();
 	}
 
 }
